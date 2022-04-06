@@ -24,11 +24,14 @@
 
 ### What is a module?
 
-> #### Why write modular software?
->
+<detail>
+<summary>Why write modular software?</summary>
+
 > ...a mechanism for improving the flexibility and comprehensibility*of a system while allowing the shortening of its development time
 >
 > Parnas, 1972
+
+</detail>
 
 - **Flexibility**: change it more easily, more reusable.
 
@@ -36,8 +39,8 @@
 
 - **Shorter life cycle**: i.e. having different people in the team working on different parts.
 
-
-A module is a...
+<detail>
+<summary>A module is a...</summary>
 
 - program unit that is discrete and identifiable with respect to compiling, combining with other units, and loading
 
@@ -65,6 +68,8 @@ A module is a...
 
     - sounds like a class
 
+</detail>
+
 > Some definitions challenge one another, we can choose the most appropriate one depending on the context.
 
 ### What is module complexity?
@@ -79,7 +84,8 @@ A module is a...
 
 4. Metrics to measure the above
 
-#### What's an example metric?
+<detail>
+<summary>What's an example metric?</summary>
 
 - Example metric: Sangwan et al.'s [**excessive structural complexity**](https://ieeexplore.ieee.org/document/4548410)
 ([Link to PDF](../PDF/Structural%20Epochs%20in%20the%20Complexity%20of%20Software%20over%20Time.pdf))
@@ -89,11 +95,12 @@ A module is a...
     What they expect:
 
     ![Project complexity through time](../Images/week-1-module-example-metric.jpg)
+</detail>
 
 - module cohesion - what's in a module -- fat
 - module coupling - interaction between modules -- tangle
 
-#### Readings
+### Readings
 
 - The classic [McCabe paper](https://ieeexplore.ieee.org/document/1702388) on module complexity
 ([Link to PDF](../PDF/A%20Complexity%20Measure.pdf))
@@ -104,15 +111,72 @@ A module is a...
 - Koziolek, Heiko's [Sustainability evaluation of software architectures: a systematic review](https://dl.acm.org/doi/abs/10.1145/2000259.2000263)
 ([Link to PDF](../PDF/Sustainability%20evaluation%20of%20software%20architectures%20-%20a%20systematic%20review.pdf))
 
-
-
-
-
 ---
 
 ## Week 2 Module cohesion: theory and analysis
 
 > Which things we put into a module, and which things go into another module (i.e. function)
+
+### Learning Objectives
+
+- Define module cohesion in terms of comptuer program architechture
+
+- Define types of module cohesion and identify them in computer programs
+
+- Use programming techniques to improve module cohesion
+
+### Readings
+
+- [ISO/IEC/IEEE International Standard - Systems and software engineering -- Vocabulary](../PDF/ISO%20IEC%20IEEE%20International%20Standard%20-%20Systems%20and%20software%20engineering%20--%20Vocabulary.pdf)
+
+### What is module cohesion?
+
+> Module cohesion is a way to reason about the contents of a module.
+
+- What we put into a module?
+
+- Have we made good decisions about what goes into a module?
+
+According to the ISO/IEEE...
+
+- The manner and degree to which the tasks performed by a single software module are related to one another.
+
+    - A single module & the relationship between items within the module, whether they are related or not. 
+
+- In software design, a measure of the strength of association of the elements within a module.
+
+    - The strength of the relationship, how we characterize it, what's the meaning of that relationship. 
+
+#### Different types of module cohesion
+
+- **Communicational**: the tasks performed by a software module *use the same input data or contribute to producing the same output data*
+
+    - OK, that's how object-oriented programming works
+
+- **Functional**: the tasks performed by a software module *all contribute to the performance of a single function*
+
+    - OK, they all are working towards a certain goal, but depends on how clear the goal is defined. 
+
+- **Logical**: the tasks performed by a software module *perform logically similar functions*
+
+    - OK/Bad, processing things in similar ways but very different context (communicational cohesion not met)
+
+- **Procedural**: the tasks performed by a software momdule *all contribute to a given program procedure, such as an interation or decision process*
+
+    - Bad-ish
+
+- **Sequential**: *the output of one task* performed by a software module *serves as input to another task* performed by the module
+
+    - Bad, slightly worse than procedural
+
+- **Temporal**: the tasks performed by a software module are *all required at a particular phase of program execution*
+
+    - Bad
+
+- **Coincidental**: the tasks performed by a software *have no functional relationship to one another*
+
+    - Bad, pure hell
+
 
 
 

@@ -27,7 +27,7 @@
 <detail>
 <summary>Why write modular software?</summary>
 
-> ...a mechanism for improving the flexibility and comprehensibility*of a system while allowing the shortening of its development time
+> ...a mechanism for improving the flexibility and comprehensibility of a system while allowing the shortening of its development time
 >
 > Parnas, 1972
 
@@ -44,29 +44,29 @@
 
 - program unit that is discrete and identifiable with respect to compiling, combining with other units, and loading
 
-    - **Compiling**: from source code to machine readable code, a module can be compiled on its own.
+  - **Compiling**: from source code to machine readable code, a module can be compiled on its own.
 
-    - **Combining**: a module can be combined.
+  - **Combining**: a module can be combined.
 
-    - **Loading**: a module can be loaded independently.
+  - **Loading**: a module can be loaded independently.
 
 - logically separable part of a program
 
-    - are the code discrete?
+  - are the code discrete?
 
-    - is it clear which piece of code is doing what?
+  - is it clear which piece of code is doing what?
 
-    - is your function containing too many logically separable part?
+  - is your function containing too many logically separable part?
 
 - set of source code files under version control that can be manipulated as one
 
-    - source code management
+  - source code management
 
-    - is there a lot of files that can be imported into another repository?
+  - is there a lot of files that can be imported into another repository?
 
 - collection of both data and the routines that act on it
 
-    - sounds like a class
+  - sounds like a class
 
 </detail>
 
@@ -88,14 +88,15 @@
 <summary>What's an example metric?</summary>
 
 - Example metric: Sangwan et al.'s [**excessive structural complexity**](https://ieeexplore.ieee.org/document/4548410)
-([Link to PDF](../PDF/Structural%20Epochs%20in%20the%20Complexity%20of%20Software%20over%20Time.pdf))
+  ([Link to PDF](../PDF/Structural%20Epochs%20in%20the%20Complexity%20of%20Software%20over%20Time.pdf))
 
-    Look at open-source software engineering projects, how to know the complexity of the program over time. Both absolute complexity and relative, the former will be the graph below, and the latter will be, when the code is broken apart into modules, the fat (how much is going on) decreases, but the tangle (interaction between modules) increases. 
+      Look at open-source software engineering projects, how to know the complexity of the program over time. Both absolute complexity and relative, the former will be the graph below, and the latter will be, when the code is broken apart into modules, the fat (how much is going on) decreases, but the tangle (interaction between modules) increases.
 
-    What they expect:
+      What they expect:
 
-    ![Project complexity through time](../Images/week-1-module-example-metric.jpg)
-</detail>
+      ![Project complexity through time](../Images/week-1-module-example-metric.jpg)
+
+  </detail>
 
 - module cohesion - what's in a module -- fat
 - module coupling - interaction between modules -- tangle
@@ -103,13 +104,13 @@
 ### Readings
 
 - The classic [McCabe paper](https://ieeexplore.ieee.org/document/1702388) on module complexity
-([Link to PDF](../PDF/A%20Complexity%20Measure.pdf))
+  ([Link to PDF](../PDF/A%20Complexity%20Measure.pdf))
 
 - Bouwers et al.'s [Criteria for the evaluation of implemented architechtures](https://ieeexplore.ieee.org/document/5306330)
-([Link to PDF](../PDF/Criteria%20for%20the%20evaluation%20of%20implemented%20architectures.pdf))
+  ([Link to PDF](../PDF/Criteria%20for%20the%20evaluation%20of%20implemented%20architectures.pdf))
 
 - Koziolek, Heiko's [Sustainability evaluation of software architectures: a systematic review](https://dl.acm.org/doi/abs/10.1145/2000259.2000263)
-([Link to PDF](../PDF/Sustainability%20evaluation%20of%20software%20architectures%20-%20a%20systematic%20review.pdf))
+  ([Link to PDF](../PDF/Sustainability%20evaluation%20of%20software%20architectures%20-%20a%20systematic%20review.pdf))
 
 ---
 
@@ -141,45 +142,41 @@ According to the ISO/IEEE...
 
 - The manner and degree to which the tasks performed by a single software module are related to one another.
 
-    - A single module & the relationship between items within the module, whether they are related or not. 
+  - A single module & the relationship between items within the module, whether they are related or not.
 
 - In software design, a measure of the strength of association of the elements within a module.
 
-    - The strength of the relationship, how we characterize it, what's the meaning of that relationship. 
+  - The strength of the relationship, how we characterize it, what's the meaning of that relationship.
 
 #### Different types of module cohesion
 
-- **Communicational**: the tasks performed by a software module *use the same input data or contribute to producing the same output data*
+- **Communicational**: the tasks performed by a software module _use the same input data or contribute to producing the same output data_
 
-    - OK, that's how object-oriented programming works
+  - OK, that's how object-oriented programming works
 
-- **Functional**: the tasks performed by a software module *all contribute to the performance of a single function*
+- **Functional**: the tasks performed by a software module _all contribute to the performance of a single function_
 
-    - OK, they all are working towards a certain goal, but depends on how clear the goal is defined. 
+  - OK, they all are working towards a certain goal, but depends on how clear the goal is defined.
 
-- **Logical**: the tasks performed by a software module *perform logically similar functions*
+- **Logical**: the tasks performed by a software module _perform logically similar functions_
 
-    - OK/Bad, processing things in similar ways but very different context (communicational cohesion not met)
+  - OK/Bad, processing things in similar ways but very different context (communicational cohesion not met)
 
-- **Procedural**: the tasks performed by a software momdule *all contribute to a given program procedure, such as an interation or decision process*
+- **Procedural**: the tasks performed by a software momdule _all contribute to a given program procedure, such as an interation or decision process_
 
-    - Bad-ish
+  - Bad-ish
 
-- **Sequential**: *the output of one task* performed by a software module *serves as input to another task* performed by the module
+- **Sequential**: _the output of one task_ performed by a software module _serves as input to another task_ performed by the module
 
-    - Bad, slightly worse than procedural
+  - Bad, slightly worse than procedural
 
-- **Temporal**: the tasks performed by a software module are *all required at a particular phase of program execution*
+- **Temporal**: the tasks performed by a software module are _all required at a particular phase of program execution_
 
-    - Bad
+  - Bad
 
-- **Coincidental**: the tasks performed by a software *have no functional relationship to one another*
+- **Coincidental**: the tasks performed by a software _have no functional relationship to one another_
 
-    - Bad, pure hell
-
-
-
-
+  - Bad, pure hell
 
 ---
 
@@ -187,17 +184,65 @@ According to the ISO/IEEE...
 
 > Different ways modules interacting with each other, when those interactions are desirable and when they're not
 
+### Learning Objectives
 
+- Give a high level definition of module coupling and illustrate with an example
 
+- Analyse computer programs to identify different types of module coupling
+
+- Describe different types of module coupling and discuss which are desirable and which are not
+
+### What is module coupling?
+
+1. manner and degree of interdependence between software modules
+
+   - _interdependence_: two modules rely on each other to work
+   - _manner of interdependence_: how does it rely on that module?
+   - _degree of interdependence_: how many points of reliance are there?
+
+2. strength of the relationships between modules
+
+   - how much impact do they have on each other?
+
+3. measure of how closely connected two routines or modules are
+
+   - indirect impacts, or both closedly related to a module but no direct contacts
+
+4. in software design, a measure of the interdependence among modules in a computer program
+
+### Different types of module coupling
+
+- **Common environment**: two modules access a common data area
+    - It's okay, but data **could** end up in unpredictable states.
+
+        ![Common Environment Coupling demo](../Images/common-environment-coupling.jpg)
+
+- **Content**: some or all contents of one module are included in the content of another module
+    - Acceptable. This is a very common way of designing and writing code.
+
+        ![Content Coupling demo](../Images/content-coupling.jpg)
+
+- **Control**: one module communicates information to another module for the explicit purpose of influencing the latter module's execution
+
+  - Bad, might have some edge cases that's acceptable.
+        ![Control Coupling demo](../Images/control-coupling.jpg)
+
+- **Data/Input-Output**: output from one module serves as input to another module
+
+  - Good, standard.
+
+- **Hyrbid**: different subsets of the range of values that a data item can assume are used for different and unrelated purposes in different modules
+
+  - Bad.
+        ![Hybrid Coupling demo](../Images/hybrid-coupling.jpg)
+
+- **Pathological**: one module affects or depends upon the internal implementation of another
+  - Very Bad. Like hybrid but worse.
 
 ---
 
 ## Week 4 Module coupling and cohesion in practice
 
 > Common programing concepts and language techniques, connecting with the previous three weeks, with hands-on practices
-
-
-
-
 
 ---

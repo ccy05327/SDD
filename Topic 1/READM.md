@@ -213,19 +213,21 @@ According to the ISO/IEEE...
 ### Different types of module coupling
 
 - **Common environment**: two modules access a common data area
-    - It's okay, but data **could** end up in unpredictable states.
 
-        ![Common Environment Coupling demo](../Images/common-environment-coupling.jpg)
+  - It's okay, but data **could** end up in unpredictable states.
+
+    ![Common Environment Coupling demo](../Images/common-environment-coupling.jpg)
 
 - **Content**: some or all contents of one module are included in the content of another module
-    - Acceptable. This is a very common way of designing and writing code.
 
-        ![Content Coupling demo](../Images/content-coupling.jpg)
+  - Acceptable. This is a very common way of designing and writing code.
+
+    ![Content Coupling demo](../Images/content-coupling.jpg)
 
 - **Control**: one module communicates information to another module for the explicit purpose of influencing the latter module's execution
 
   - Bad, might have some edge cases that's acceptable.
-        ![Control Coupling demo](../Images/control-coupling.jpg)
+    ![Control Coupling demo](../Images/control-coupling.jpg)
 
 - **Data/Input-Output**: output from one module serves as input to another module
 
@@ -234,7 +236,7 @@ According to the ISO/IEEE...
 - **Hyrbid**: different subsets of the range of values that a data item can assume are used for different and unrelated purposes in different modules
 
   - Bad.
-        ![Hybrid Coupling demo](../Images/hybrid-coupling.jpg)
+    ![Hybrid Coupling demo](../Images/hybrid-coupling.jpg)
 
 - **Pathological**: one module affects or depends upon the internal implementation of another
   - Very Bad. Like hybrid but worse.
@@ -244,5 +246,140 @@ According to the ISO/IEEE...
 ## Week 4 Module coupling and cohesion in practice
 
 > Common programing concepts and language techniques, connecting with the previous three weeks, with hands-on practices
+
+### Learning Objectives
+
+- Explain the connection between common programming concepts and module concepts
+
+- Using programming techniques to improve module coupling and cohesion
+
+- Use language features to improve module coupling and cohesion
+
+### Reading
+
+- [W3School's JavaScript scope](https://www.w3schools.com/js/js_scope.asp)
+
+  - Block, function, global scope
+
+- [W3School's JavaScript const](https://www.w3schools.com/JS/js_const.asp)
+
+### Scope
+
+```
+var x, y, z;
+
+function addition(){
+  z = x + y;
+}
+
+console.log(z); // Undefined
+addition();
+console.log(z); // NaN
+```
+
+Adding parameters to the function
+
+```
+var x, y, z;
+
+function addition(p1, p2){
+  return p1 + p2;
+}
+
+x = 10;
+y = 12;
+z = 14;
+
+console.log(z); // 14
+z = addition(x, y);
+console.log(z); // 22
+```
+
+### Function parameters
+
+Bad example (no need for allowing the module to have access to the whole game's state)
+
+```
+
+var game_state = {
+  "lives": 3,
+  "score": 125,
+  "level": 4
+}
+
+function canHaveExtraLife(current_game_state){
+  if (current_game_state.lives < 2 &&
+      current_game_state.level > 4){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+```
+
+Instead:
+
+```
+
+var game_state = {
+  "lives": 3,
+  "score": 125,
+  "level": 4
+}
+
+function canHaveExtraLife(lives, level){
+  if (lives < 2 && level > 4){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+```
+
+### Const
+
+Example of pathological coupling.
+
+```
+function addition(p1, p2){
+  return p1+p2;
+}
+
+function pathos(){
+  addition = function(p1, p2){
+    return p1*p2;
+  }
+}
+
+var z;
+z = addition(10, 12); // 22
+pathos();
+z = addition(10, 12); // 120
+
+```
+
+Adding the const to `addition()` to rule it
+
+```
+const function addition(p1, p2){
+  return p1+p2;
+}
+
+function pathos(){
+  addition = function(p1, p2){
+    return p1*p2;
+  }
+}
+
+var z;
+z = addition(10, 12); // 22
+pathos(); // will cause error
+z = addition(10, 12);
+
+```
 
 ---

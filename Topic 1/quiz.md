@@ -74,21 +74,21 @@
    - [x] Communicational
    - [ ] <span style="color: salmon">Procedural</span>
        <detail>
-     <summary>Incorrect</summary>
-     No. While it may seem like this is an acceptable type of cohesion, data often changes during use – meaning that you could be working on several different versions/sets of data within a procedurally cohesive module. Instead, these procedures should be split up into smaller parts, determined by the individual steps in the procedure.
-     </detail>
+   <summary>Incorrect</summary>
+   No. While it may seem like this is an acceptable type of cohesion, data often changes during use – meaning that you could be working on several different versions/sets of data within a procedurally cohesive module. Instead, these procedures should be split up into smaller parts, determined by the individual steps in the procedure.
+   </detail>
    - [x] Functional
    - [ ] Coincidental
    - [ ] <span style="color: salmon">Logical</span>
        <detail>
-     <summary>Incorrect</summary>
-     No. This is **sometimes** okay, but not always. Just because the elements may look like they're doing similar things, its doesn't mean that they actually are doing similar things.
-     </detail>
+   <summary>Incorrect</summary>
+   No. This is **sometimes** okay, but not always. Just because the elements may look like they're doing similar things, its doesn't mean that they actually are doing similar things.
+   </detail>
    - [ ] <span style="color: salmon">Temporal</span>
        <detail>
-     <summary>Incorrect</summary>
-     No. Just because processes happen close to each other in time, doesn't mean they belong together in code.
-     </detail>
+   <summary>Incorrect</summary>
+   No. Just because processes happen close to each other in time, doesn't mean they belong together in code.
+   </detail>
 
 ## 2.0205 Post-video quiz
 
@@ -206,9 +206,56 @@
 
    > Correct. One module should not go and change the function of another module directly. Only very small use case (e.g. live sound performance using coding).
 
+## 3.0218 Define module coupling
 
-## 3.0218 Define module coupling 
+1. Write a short definition of module coupling.
 
-1. Write a short definition of module coupling. 
+   - Module coupling is the relationship between modules, the strength of the relationship, and the measure of the strength of the relationship.
 
-    - Module coupling is the relationship between modules, the strength of the relationship, and the measure of the strength of the relationship. 
+## 4.0202 Post-video quiz
+
+> 4.0201 Reasoning about scope
+
+1. What did Matt do to improve the coupling and cohesion of the example program?
+
+   - [ ] Passed in numbers rather than variables.
+
+   - [ ] He defined x, y and z as ints, rather than leaving them as vars.
+
+   - [x] Rewrote addition() to receive parameters, rather than add together global variables.
+
+   > Correct. By rewriting this function to accept two parameters to add together, rather than two global variables that exist outside of it, this function has become decoupled from the rest of the program, less dependent on what goes on outside of it, and could be easily copied and pasted into another program and keep its functionality.
+
+## 4.0204 Post-video quiz
+
+> 4.0203 Reasoning about function parameters
+
+1. What did using 'lives' and 'level', instead of the entire game_state, as function parameters achieve in this example?
+
+   - [ ] Reduce the functionality of canHaveExtraLife().
+
+   - [x] Decoupling of code meant that reference to data structure was removed, making the function reusable, more flexible and less likely to cause bugs.
+
+   - [ ] It allows finer control of variables.
+
+   > Yes. canHaveExtraLife() can now be used wherever it's useful since it doesn't need to know about the game state at all. It also means that if canHaveExtraLife() doesn't 'know' about the game_state, it can't accidentally change it without us realising – which means you're less likely to end up with bugs because of that.
+
+## 4.0206 Post-video quiz
+
+> 4.0205 Replacing functions dynamically and const
+
+1. Thinking back to your lectures on coupling, is pathological coupling generally a good way to couple together modules?
+
+   - [x] No
+
+   - [ ] Sometimes
+
+   - [ ] Yes
+
+## 4.0209 Programming techniques and language features
+
+1. Explain briefly the difference between programming techniques and language features. You might not think that they are completely separable. That's fine - if so, explain why.
+
+   - Programming techniques are more about the general ways to work around programs, whereas language features focus more on the specific language, what it can do.
+
+   > Here is my attempt: Programming techniques relate to the way you structure and organise the code and the choices you make about control flow and data. Language features are related and interact with programming techniques but they can be used to more strongly control how programmers work with your modules.

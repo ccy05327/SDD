@@ -42,30 +42,32 @@ The following special issue on test-driven development contains several interest
 
     1. Write a failed test.
 
-        ```
-        function testReturnVal() {
-            let input = [1, 2, 4, 5, 6];
-            let result = getHighest(input);
+       ```
+       function testReturnVal() {
+           let input = [1, 2, 4, 5, 6];
+           let result = getHighest(input);
 
-            return !(result == undefined);
-        }
+           return !(result == undefined);
+       }
 
-        let result1 = testReturnVal();
-        if (result1) console.log("testReturnVal passed");
-        else console.log("testReturnVal failed");
+       let result1 = testReturnVal();
+       if (result1) console.log("testReturnVal passed");
+       else console.log("testReturnVal failed");
 
-        // ReferenceError: getHighest is not defined
-        ```
+       // ReferenceError: getHighest is not defined
+       ```
+
     2. Write the minimum code to pass the test.
 
-        ```
-        function getHighest(input) {
-            return 0;
-        }
+       ```
+       function getHighest(input) {
+           return 0;
+       }
 
-        // testReturnVal passed
-        ```
-2. Test: does it return a value from the array?
+       // testReturnVal passed
+       ```
+
+2.  Test: does it return a value from the array?
 
     ```
     function testResultInArray() {
@@ -82,7 +84,9 @@ The following special issue on test-driven development contains several interest
     // testReturnVal passed
     // testResultInArray failed
     ```
+
     Change `getHighest()` to:
+
     ```
     function getHighest(input) {
         return input[0];
@@ -91,7 +95,8 @@ The following special issue on test-driven development contains several interest
     // testReturnVal passed
     // testResultInArray passed
     ```
-3. Test: does it return the correct array/value?
+
+3.  Test: does it return the correct array/value?
 
     ```
     function testCorrectResult() {
@@ -110,7 +115,9 @@ The following special issue on test-driven development contains several interest
     // testResultInArray passed
     // testCorrectResult failed
     ```
+
     Change `getHighest()` to:
+
     ```
     function getHighest(input) {
 
@@ -125,31 +132,54 @@ The following special issue on test-driven development contains several interest
     // testResultInArray passed
     // testCorrectResult passed
     ```
+
     [Full test file in JavaScript](index.js)
 
 ### What to test?
 
-- **interface testing**: test if a function receives the correct input(s) and output(s), not user interface. 
+- **interface testing**: test if a function receives the correct input(s) and output(s), not user interface.
 
 - **exercising data structure**: verifying data structures' been used correctly and being stored.
 
-- **boundary testing**: specifying boundaries in software. 
+- **boundary testing**: specifying boundaries in software.
 
-    i.e. a function takes an integer as input, what if I put in 0? what's the highest value I can put in?
+  i.e. a function takes an integer as input, what if I put in 0? what's the highest value I can put in?
 
-    i.e. a function finds certain things in an array, can it find the first/last element correctly?
+  i.e. a function finds certain things in an array, can it find the first/last element correctly?
 
 - **execution paths**: tests deliberately go through all paths available in a given module.
 
-- **error handling**: is the error descriptive/intelligible? does the error match what actually happened? does itt reach the error handling code (i.e. crash before reach)? 
+- **error handling**: is the error descriptive/intelligible? does the error match what actually happened? does itt reach the error handling code (i.e. crash before reach)?
 
 ## Week 6 Unit testing in Python
 
 ### Learning Objectives
 
--
--
--
+- Write unit tests using the Python unittest package
+- Describe the elements of a unit testing framework
+- Carry out the test-driven development workflow in Python
+
+### Reading
+
+- [Python unittest](https://docs.python.org/3/library/unittest.html)
+
+### Unittest in Python
+
+- [Python Script](main.ipynb)
+
+```
+import unittest
+
+class TestSetForOneModule(unittest.TestCase):
+    def test_arithmetic_pass(self):
+        self.assertEqual(2+2, 4)
+
+    def test_arithmetic_fail(self):
+        self.assertEqual(2+2, 3)
+
+unittest.main(argv=['ignored', '-v'], exit=False)
+```
+
 
 ## Week 7 Unit testing in C++
 
@@ -166,4 +196,3 @@ The following special issue on test-driven development contains several interest
 -
 -
 -
-```

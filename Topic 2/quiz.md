@@ -124,6 +124,89 @@ Don't write a longer test than what you need. 2. According to Robert Martin ('Un
 
 - Test-Driven Development, short for TDD, is an approach for testing programs while in production. Usually a 2-minute cycle of Test-Fail-Test-Pass.
 
-    > Model answer: Test-driven development is a method of developing software which operates in a repeated 'test and develop' cycle. The first step is to write a test which the software will fail. Next, the code is written to pass the test, then the test is run again. 
+  > Model answer: Test-driven development is a method of developing software which operates in a repeated 'test and develop' cycle. The first step is to write a test which the software will fail. Next, the code is written to pass the test, then the test is run again.
+
+## 6.0202 Post-video quiz
+
+> 6.0201 Introduction to unittest in Python
+
+1. What is the name of the library Matt is using for unit testing in Python?
+
+- [ ] self.unittest
+
+- [ ] UnitCase
+
+- [ ] self
+
+- [x] unittest
+
+## 6.0204 Post-video quiz
+
+> 6.0203 Assertion function in unittest
+
+1. Which of the following are valid assert functions in the unittest.testcase library?
+
+- [ ] assertCouldBeIn(a, b)
+
+- [ ] assertIsSomewhere(a, b)
+
+- [x] assertFalse(x)
+
+- [x] assertNotIn(a, b)
+
+2. Which of the following would be a the best name for a test function using the unittest.testcase library?
+
+- [ ] testing
+
+- [ ] testytestytest
+
+- [ ] somekindofcode
+
+- [x] test_addition
+
+- [ ] AdditionTest
+
+## 6.0302 Post-video quiz
+
+> 6.0301 Introduction to statistics libraries
+
+1. Question 1
+
+True or false?: There are no pre-existing stats libraries in python - this is why we're making our own.
+
+- [ ] TRUE
+
+- [x] FALSE
+
+2. Why does making a statistics library make particular sense if using python for this lab?
+
+- [ ] Python is the only language that's capable of doing statistical analysis.
+
+- [x] Python is heavily used for data analysis and machine learning - which both involve processing huge amounts of data.
+
+- [ ] Python is an easy to use language, and statistics is easy.
+
+## 6.0304 Post-video quiz
+
+> 6.0303 First few steps in the lab
+
+1. What is the first thing we need to do in our test-driven development process?
+
+- [ ] Create the functions that will go into snakestats.py.
+
+- [x] Create a snakestats.py library file
+
+- [ ] Find a library to use for statistical analysis.
+
+
+
+
+
+
+
+
+
+
+
 
 **remember to indent after complete**

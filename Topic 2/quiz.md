@@ -198,9 +198,45 @@ True or false?: There are no pre-existing stats libraries in python - this is wh
 
 - [ ] Find a library to use for statistical analysis.
 
+## 7.0207 Post-video quiz
 
+> 7.0206 Introduction to cppunit
 
+1. What is the unit testing framework that Matt has chosen to use with C++?
 
+- [ ] UnitTest++
+
+- [ ] CppTest
+
+- [ ] gUnit
+
+- [x] cppUnit
+
+## 7.0209 Post-video quiz
+
+> 7.0208 Adding better output and multiple tests
+
+1. Question 1
+
+Which of the following statements about the CppUnit framework is true?
+
+- [x] A function with a single assert is a test.
+
+- [x] An assert is not a test, a function is a test.
+
+- [ ] <span style="color:salmon">Two asserts in one function results in two tests.</span>
+
+- [ ] <span style="color:salmon">An assert counts as as test, a function does not.</span>
+
+- [ ] <span style="color:MediumPurple">TestCaller is a test.</span>
+
+## 7.0302 Post-video quiz
+
+> 7.0301 What is a physics engine?
+
+1. Having watched the video, where have you seen a physics engine in action? This can be on any device, not just on your computer.
+
+- Well, sort of yes. I'm taking Graphics Programming at the moment, and have been working on the matter.js physics engine library for the past week or so. It is quite hard at first, as someone who doesn't play games much, but surely interesting to write. 
 
 
 

@@ -185,9 +185,19 @@ unittest.main(argv=['ignored', '-v'], exit=False)
 
 ### Learning Objectives
 
--
--
--
+- Write unit tests using the C++ cppunit package
+- Describe the elements of a unit testing framework
+- Carry out the test-driven development workflow in C++
+
+### Reading
+
+- cplusplus.com - [Structure of a program](http://cplusplus.com/doc/tutorial/program_structure/)
+
+### cppunit in C++
+
+- [C++ file](main.cpp)
+
+- [cppunit: Making assertions](https://web.archive.org/web/20180601221213/http://cppunit.sourceforge.net/doc/lastest/group___assertions.html)
 
 ## Week 8 Unit testing a web API
 

@@ -24,14 +24,11 @@
 
 ### What is a module?
 
-<detail>
-<summary>Why write modular software?</summary>
+Why write modular software?
 
 > ...a mechanism for improving the flexibility and comprehensibility of a system while allowing the shortening of its development time
 >
 > Parnas, 1972
-
-</detail>
 
 - **Flexibility**: change it more easily, more reusable.
 
@@ -39,8 +36,7 @@
 
 - **Shorter life cycle**: i.e. having different people in the team working on different parts.
 
-<detail>
-<summary>A module is a...</summary>
+A module is a...
 
 - program unit that is discrete and identifiable with respect to compiling, combining with other units, and loading
 
@@ -68,7 +64,6 @@
 
   - sounds like a class
 
-</detail>
 
 > Some definitions challenge one another, we can choose the most appropriate one depending on the context.
 
@@ -84,17 +79,15 @@
 
 4. Metrics to measure the above
 
-<detail>
-<summary>What's an example metric?</summary>
+What's an example metric?
 
-- Example metric: Sangwan et al.'s [**excessive structural complexity**](https://ieeexplore.ieee.org/document/4548410)
-  ([Link to PDF](../PDF/Structural%20Epochs%20in%20the%20Complexity%20of%20Software%20over%20Time.pdf))
+- Example metric: Sangwan et al.'s **[excessive structural complexity](https://ieeexplore.ieee.org/document/4548410)** ([Link to PDF](../PDF/Structural%20Epochs%20in%20the%20Complexity%20of%20Software%20over%20Time.pdf))
 
-      Look at open-source software engineering projects, how to know the complexity of the program over time. Both absolute complexity and relative, the former will be the graph below, and the latter will be, when the code is broken apart into modules, the fat (how much is going on) decreases, but the tangle (interaction between modules) increases.
+  Look at open-source software engineering projects, how to know the complexity of the program over time. Both absolute complexity and relative, the former will be the graph below, and the latter will be, when the code is broken apart into modules, the fat (how much is going on) decreases, but the tangle (interaction between modules) increases.
 
-      What they expect:
+  What they expect:
 
-      ![Project complexity through time](../Images/week-1-module-example-metric.jpg)
+  ![Project complexity through time](../Images/week-1-module-example-metric.jpg)
 
   </detail>
 
@@ -162,7 +155,7 @@ According to the ISO/IEEE...
 
   - OK/Bad, processing things in similar ways but very different context (communicational cohesion not met)
 
-- **Procedural**: the tasks performed by a software momdule _all contribute to a given program procedure, such as an interation or decision process_
+- **Procedural**: the tasks performed by a software module _all contribute to a given program procedure, such as an iteration or decision process_
 
   - Bad-ish
 

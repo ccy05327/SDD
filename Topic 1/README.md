@@ -64,7 +64,6 @@ A module is a...
 
   - sounds like a class
 
-
 > Some definitions challenge one another, we can choose the most appropriate one depending on the context.
 
 ### What is module complexity?
@@ -88,8 +87,6 @@ What's an example metric?
   What they expect:
 
   ![Project complexity through time](../Images/week-1-module-example-metric.jpg)
-
-  </detail>
 
 - module cohesion - what's in a module -- fat
 - module coupling - interaction between modules -- tangle

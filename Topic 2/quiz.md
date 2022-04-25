@@ -236,13 +236,14 @@ Which of the following statements about the CppUnit framework is true?
 
 1. Having watched the video, where have you seen a physics engine in action? This can be on any device, not just on your computer.
 
-- Well, sort of yes. I'm taking Graphics Programming at the moment, and have been working on the matter.js physics engine library for the past week or so. It is quite hard at first, as someone who doesn't play games much, but surely interesting to write. 
+- Well, sort of yes. I'm taking Graphics Programming at the moment, and have been working on the matter.js physics engine library for the past week or so. It is quite hard at first, as someone who doesn't play games much, but surely interesting to write.
 
+## 8.0304 Post-video quiz
 
+> 8.0303 Considerations when testing a web API
 
+1. Does unit testing feel different across the different platforms? What feels the same, or different?
 
-
-
-
+- To me, the differences now are just the syntax for the language, instead of something unit testing specific. In C++, Python, and JS, the outset is quite similar, we're writing functions and using assert to test the equality of something.
 
 **remember to indent after complete**

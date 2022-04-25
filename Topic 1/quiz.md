@@ -73,22 +73,20 @@
 
    - [x] Communicational
    - [ ] <span style="color: salmon">Procedural</span>
-       <detail>
-   <summary>Incorrect</summary>
-   No. While it may seem like this is an acceptable type of cohesion, data often changes during use – meaning that you could be working on several different versions/sets of data within a procedurally cohesive module. Instead, these procedures should be split up into smaller parts, determined by the individual steps in the procedure.
-   </detail>
+
+         No. While it may seem like this is an acceptable type of cohesion, data often changes during use – meaning that you could be working on several different versions/sets of data within a procedurally cohesive module. Instead, these procedures should be split up into smaller parts, determined by the individual steps in the procedure.
+
    - [x] Functional
    - [ ] Coincidental
    - [ ] <span style="color: salmon">Logical</span>
-       <detail>
-   <summary>Incorrect</summary>
-   No. This is **sometimes** okay, but not always. Just because the elements may look like they're doing similar things, its doesn't mean that they actually are doing similar things.
-   </detail>
+
+         Incorrect
+         No. This is **sometimes** okay, but not always. Just because the elements may look like they're doing similar things, its doesn't mean that they actually are doing similar things.
+
    - [ ] <span style="color: salmon">Temporal</span>
-       <detail>
-   <summary>Incorrect</summary>
-   No. Just because processes happen close to each other in time, doesn't mean they belong together in code.
-   </detail>
+
+         Incorrect
+         No. Just because processes happen close to each other in time, doesn't mean they belong together in code.
 
 ## 2.0205 Post-video quiz
 

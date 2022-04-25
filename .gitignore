@@ -3,3 +3,5 @@
 *.vs
 *.vsc
 */cppunit
+*node_modules
+package-lock.json

@@ -180,7 +180,6 @@ class TestSetForOneModule(unittest.TestCase):
 unittest.main(argv=['ignored', '-v'], exit=False)
 ```
 
-
 ## Week 7 Unit testing in C++
 
 ### Learning Objectives
@@ -203,6 +202,19 @@ unittest.main(argv=['ignored', '-v'], exit=False)
 
 ### Learning Objectives
 
--
--
--
+- Write unit tests using the JavaScript Mocha package
+- Describe the elements of a unit testing framework
+- Carry out the test-driven development workflow
+
+This week we will be working with various tools. You can use our browser-based JavaScript environment to carry out the work – in that case, you should not need to install anything.
+
+If you plan to work on your own machine, you will be given instructions on which tools to install later, but you can get start now by installing [Node.js](https://nodejs.org/en/). We recommend version 12 LTS.
+
+We will be using [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/) to carry out the unit testing.
+
+- [Mocha & Chai script](\W8\test\test.js)
+- [REST API script](\norestforthewiccad\test\test.js)
+
+> Might need `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` for PowerShell to run the tests.
+
+- [Instructions](norestforthewiccad.pdf)

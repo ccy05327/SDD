@@ -194,7 +194,7 @@ Links:
     <li>Perform Threat Modeling</li>
     <li>Establish Design Requirements</li>
     <li>Define and Use Cryptography Standards</li>
-    <span style="color: white">
+    <span style="color: #f0e7d5">
       <li>Manage the Security Risk of Using Third-Party Components</li>
       <span style="color: gray">
         <ol>

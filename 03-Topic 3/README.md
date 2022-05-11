@@ -165,7 +165,6 @@ Links:
       <li>Least common mechanism</li>
       <li>Psychological acceptability/Easy to use</li>
     </ul>
-  </span>
 
 - Carefully call out to other resources
 
@@ -213,7 +212,6 @@ Links:
     <li>Perform Penetration Testing</li>
     <li>Establish a Standard Incident Response Process</li>
   </ol>
-</span>
 
 **Alternatives to MS SDL**
 

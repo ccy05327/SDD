@@ -142,41 +142,124 @@
 
 ---
 
+## 11.0202 Post-video quiz
+
+> 11.0201 Different types of erros
+
+1. What are some of the kinds of errors that Matt described in the video?
+
+- [ ] Exception errors
+- [ ] Security errors
+- [x] Non-errors
+- [ ] Factual errors
+- [x] Link(build) errors
+- [x] Syntax errors
+
+## 11.0204 Post-video quiz
+
+> 11.0203 Introduction to exceptions
+
+1. Which part of the program should throw an exception?
+
+- [ ] `main()`
+- [ ] Assertion
+- [x] Calle
+- [ ] Caller
+
+2. [T/F] Exceptions can and should be used for control flow in a program.
+
+- [ ] True
+- [x] False
+
+## 11.0206 Post-video quiz
+
+> 11.0205 The try and catch pattern
+
+1. A common pathway used for execeptions is:
+
+- [ ] The throw and catch pattern
+- [ ] The catch and lob pattern
+- [ ] The scratch and sniff pattern
+- [x] The try and catch pattern
+
+
+## 11.0208 Post-video quiz
+
+> 11.0207 Try and catch in JavaScript
+
+1. Have you been using exceptions in any of your programming to date? Can you think how they would be useful? How important do you think they are moving forward?
+
+- I can see the importance now even though not used often in the past. 
+
+## 11.0210 Post-video quiz
+
+> 11.0209 Throw in JavaScript
+
+1. Why would you want to throw your **own** exception?
+
+- [x] You can add specificity to the error message based on the bug that is encountered
+- [ ] There are no default exceptions available, so if you want to discover any bugs in your code at all you must write your own exceptions
+- [ ] It makes it easier to catch an exception if you've written it yourself
+
+## 11.0213 Reflective quiz
+
+1. We have now looked at exception handling and assertion. Write a short paragraph comparing exception handling, assertion and control flow. 
+
+- Control flow is used when setting the logic in the program, not for error handling. When detecting errors, we use an assertion and then use an exception to deal with the errors later on. 
+
+> Exception handling is a technique that we use to deal with unexpected circumstances occur whilst a program is running. It normally allows the program to continue running.
+> 
+> Assertion is a method of ensuring the program is in an appropriate state, where execution is typically halted if the state is deemed to not be appropriate....
+> 
+> Control flow is a method of dictating which parts of the program should run under normal circumstances.
+
+---
+
 ## 
 
 > 
 
+1. 
 
 
 ## 
 
 > 
 
-
-
-
-## 
-
-> 
-
-
+1. 
 
 
 ## 
 
 > 
 
-
+1. 
 
 
 ## 
 
 > 
 
+1. 
 
 
+## 
+
+> 
+
+1. 
 
 
+## 
+
+> 
+
+1. 
 
 
+## 
+
+> 
+
+1. 
 

@@ -187,41 +187,41 @@ Links:
 
 > ...consists of a set of practices that support security assurance and compliance requirements. It helps developers build more secure software by reducing the number and severity of vulnerabilities in software, while reducing development cost.
 
-  <span style="color: gray">
-    <ol>
-      <li>Provide Training</li>
-      <li>Define Security Requirements</li>
-      <li>Define Metrics and Compliance Reporting</li>
-      <li>Perform Threat Modeling</li>
-      <li>Establish Design Requirements</li>
-      <li>Define and Use Cryptography Standards</li>
-      <span style="color: white">
-      <li>Manage the Security Risk of Using Third-Party Components</li>
-      <span style="color: gray">
-        <ol>
-          <li>Inventory</li>
-          <li>Perform security analysis</li>
-          <li>Keep up to date</li>
-        </ol>
-      </span>
-      <li>Use Approved Tools</li>
-      <li>Perform Static Analysis Security Testing (SAST)</li>
-      </span>
-          Looking at the source code (automated tools or human) to evalute problems. 
-      <li>Perform Dynamic Analysis Security Testing (DAST)</li>
-          Test on a running software for security.
-      <li>Perform Penetration Testing</li>
-      <li>Establish a Standard Incident Response Process</li>
-    </ol>
-  </span>
+<span style="color: gray">
+  <ol>
+    <li>Provide Training</li>
+    <li>Define Security Requirements</li>
+    <li>Define Metrics and Compliance Reporting</li>
+    <li>Perform Threat Modeling</li>
+    <li>Establish Design Requirements</li>
+    <li>Define and Use Cryptography Standards</li>
+    <span style="color: white">
+    <li>Manage the Security Risk of Using Third-Party Components</li>
+    <span style="color: gray">
+      <ol>
+        <li>Inventory</li>
+        <li>Perform security analysis</li>
+        <li>Keep up to date</li>
+      </ol>
+    </span>
+    <li>Use Approved Tools</li>
+    <li>Perform Static Analysis Security Testing (SAST)</li>
+    </span>
+        Looking at the source code (automated tools or human) to evalute problems. 
+    <li>Perform Dynamic Analysis Security Testing (DAST)</li>
+        Test on a running software for security.
+    <li>Perform Penetration Testing</li>
+    <li>Establish a Standard Incident Response Process</li>
+  </ol>
+</span>
 
 **Alternatives to MS SDL**
 
-- [SAMM](https://web.archive.org/web/20200818024731/https://www.opensamm.org/): an open framework to *help organizations formulate and implement a strategy* for software security that is tailored to the specific risks facing the organization.
+- [SAMM](https://web.archive.org/web/20200818024731/https://www.opensamm.org/): an open framework to _help organizations formulate and implement a strategy_ for software security that is tailored to the specific risks facing the organization.
 
-- [BSIMM](https://web.archive.org/web/20200831112350/https://www.bsimm.com/) ("bee simm"): *a study of existing software security initiatives*. By quantifying the practices of many different organizations, we can describe the common ground shared by many as well as the variations that make each unique. It is not a how-to guide, nor a one-size-fits-all prescription, it is a reflection of software security.
+- [BSIMM](https://web.archive.org/web/20200831112350/https://www.bsimm.com/) ("bee simm"): _a study of existing software security initiatives_. By quantifying the practices of many different organizations, we can describe the common ground shared by many as well as the variations that make each unique. It is not a how-to guide, nor a one-size-fits-all prescription, it is a reflection of software security.
 
-- [CLASP/OWASP](https://web.archive.org/web/20200911124016/https://us-cert.cisa.gov/bsi/articles/best-practices/requirements-engineering/introduction-to-the-clasp-process): designed to *help software development teams build security into the early stages* of existing and new-start software development life cycles in a sturctured, repeatable, and measurable way.
+- [CLASP/OWASP](https://web.archive.org/web/20200911124016/https://us-cert.cisa.gov/bsi/articles/best-practices/requirements-engineering/introduction-to-the-clasp-process): designed to _help software development teams build security into the early stages_ of existing and new-start software development life cycles in a sturctured, repeatable, and measurable way.
 
 ### Static analysis in Python ([bandit](https://bandit.readthedocs.io/en/latest))
 
@@ -235,19 +235,76 @@ Links:
 3. Navigate the library location `bandit *.py` to test all .py files in that library (`bandit -r .` if the command doesn't work)
 4. `bandit -ll *.py` to show only medium & high severity (`bandit -rll .` works)
 
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## Week 11 Exception handling
+
+### Learning Objectives
+
+- Define the terms throw, try and catch
+- Differentiate between exceptions, assertions and control flow
+- Write exception handling code that can throw and catch exceptions
+
+### Different types of errors
+
+- **syntax errors**
+- **compile/interpret errors**
+- **link (build) errors (C++)**: promise a function and called it but didn't implement it
+- **non-errors**: non-sensical usage i.e. width & height negative inputs
+- **runtime errors**
+
+### Exceptions
+
+> 1. Event that causes suspension of normal program execution
+>
+> 2. Indication that an operation request was not performed successfully
+
+> The foundamental idea is to separate detection of an error (which shuold be done in a called function) from the handling of an error (which should be done in the calling function) while ensuring that a detected error cannot be ignored.
+> 
+> Bjarne Stroustrup - Programming: principles and practice using C++, 2014
+
+### Assertion
+
+> 1. logical expression specifying a program state that must exist or a set of conditions that program variables must satisfy at a particular point during program execution. 
+> 
+> 2. function or macro that complains loudly if a design assumption on which the code is based is not true
+
+<p style="text-align: center"><img src="../09-Images/assertion-vs-exception.jpg" alt="assertion vs. exception image" style="height: 300px"><br/>Assertion vs. Exception</p>
+
+Exceptions should be used to catch errors, control flow has similar syntax and function, but shouldn't be used as such. 
+
+### Try and catch
+
+<p style="text-align: center"><img src="../09-Images/try-and-catch.jpg" alt="assertion vs. exception image" style="height: 400px"><br/>Try and catch</p>
+
+#### Try and catch in JavaScript
+
+```
+try {
+  verifyUser();
+  console.log('After verifyUser');
+} catch (ex) {
+  console.log('Exception caught');
+  console.log('Name: ' + ex.name);
+  console.log('Message: ' + ex.message);
+}
+console.log('I am still running...');
+
+```
+
+#### Throw in JavaScript
+
+[Exception Handling in JavaScript (code)](exception.js)
+
+### Programming exercise
+
+Here is a reference for the built-in errors in JavaScript:
+
+- MDN web docs '[JavaScript error reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors)' (2020)
+
+Can you write an example program that generates one of these errors in JavaScript? 
+
+[Exercise (code)](exercise.js)
 
 ---
 

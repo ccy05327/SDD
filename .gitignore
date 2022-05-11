@@ -3,6 +3,7 @@
 *.exe
 *.vs
 *.vsc
+*.vscode
 */cppunit
 *node_modules
 package-lock.json

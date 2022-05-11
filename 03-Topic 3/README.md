@@ -196,18 +196,18 @@ Links:
     <li>Establish Design Requirements</li>
     <li>Define and Use Cryptography Standards</li>
     <span style="color: white">
-    <li>Manage the Security Risk of Using Third-Party Components</li>
-    <span style="color: gray">
-      <ol>
-        <li>Inventory</li>
-        <li>Perform security analysis</li>
-        <li>Keep up to date</li>
-      </ol>
+      <li>Manage the Security Risk of Using Third-Party Components</li>
+      <span style="color: gray">
+        <ol>
+          <li>Inventory</li>
+          <li>Perform security analysis</li>
+          <li>Keep up to date</li>
+        </ol>
+      </span>
+      <li>Use Approved Tools</li>
+      <li>Perform Static Analysis Security Testing (SAST)</li>
     </span>
-    <li>Use Approved Tools</li>
-    <li>Perform Static Analysis Security Testing (SAST)</li>
-    </span>
-        Looking at the source code (automated tools or human) to evalute problems. 
+    Looking at the source code (automated tools or human) to evalute problems. 
     <li>Perform Dynamic Analysis Security Testing (DAST)</li>
         Test on a running software for security.
     <li>Perform Penetration Testing</li>
@@ -309,5 +309,38 @@ Can you write an example program that generates one of these errors in JavaScrip
 ---
 
 ## Week 12 Using a debugger
+
+### Learning Objectives
+
+- Explain the key operations that can be carried out with a debugger
+- Use debug operations such as stepping and stack tracing to explore a running program
+- Use conditional breakpoints and watchpoints to automatically trigger debugger breaks
+
+### Intro to Debugger
+
+> **Debugging** is simply the process of removing errors from your code. A **debugger** is a tool that you can use to inspect your program as it is running.
+
+Using `print`, `console.log`, and `std::cout` are a kind of manual debugger. 
+
+Debugger allows *dynamic analysis*. 
+
+### Debugging with GDB
+
+- ([PDF](../08-PDF/GDB.pdf)) The DNU Project Debugger '[GDB documentation](https://www.gnu.org/software/gdb/documentation/)' (2020)
+
+[Debug in C++ (code)](debug.cpp)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---

@@ -215,12 +215,21 @@
 
 ---
 
-## 
+## 12.0202 Post-video quiz
 
-> 
+> 12.0201 Introduction to debuggers
 
-1. 
+1. Which of the following might be referred to as debugging?
 
+- [x] Printing out the values of variables to the console
+- [x] <span style="color: salmon">Pulling dead insects out of the blocked relays of an old computer system</span>
+- [x] Using specialised software to pause the execution of the program at various points and to investigate the state of the variables
+
+2. Which of the following are debuggers?
+
+- [x] GDB
+- [ ] LLVM
+- [x] WinDBG
 
 ## 
 

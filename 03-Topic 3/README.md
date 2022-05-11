@@ -260,18 +260,18 @@ Links:
 > 2. Indication that an operation request was not performed successfully
 
 > The foundamental idea is to separate detection of an error (which shuold be done in a called function) from the handling of an error (which should be done in the calling function) while ensuring that a detected error cannot be ignored.
-> 
+>
 > Bjarne Stroustrup - Programming: principles and practice using C++, 2014
 
 ### Assertion
 
-> 1. logical expression specifying a program state that must exist or a set of conditions that program variables must satisfy at a particular point during program execution. 
-> 
+> 1. logical expression specifying a program state that must exist or a set of conditions that program variables must satisfy at a particular point during program execution.
+>
 > 2. function or macro that complains loudly if a design assumption on which the code is based is not true
 
 <p style="text-align: center"><img src="../09-Images/assertion-vs-exception.jpg" alt="assertion vs. exception image" style="height: 300px"><br/>Assertion vs. Exception</p>
 
-Exceptions should be used to catch errors, control flow has similar syntax and function, but shouldn't be used as such. 
+Exceptions should be used to catch errors, control flow has similar syntax and function, but shouldn't be used as such.
 
 ### Try and catch
 
@@ -302,7 +302,7 @@ Here is a reference for the built-in errors in JavaScript:
 
 - MDN web docs '[JavaScript error reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors)' (2020)
 
-Can you write an example program that generates one of these errors in JavaScript? 
+Can you write an example program that generates one of these errors in JavaScript?
 
 [Exercise (code)](exercise.js)
 
@@ -320,9 +320,9 @@ Can you write an example program that generates one of these errors in JavaScrip
 
 > **Debugging** is simply the process of removing errors from your code. A **debugger** is a tool that you can use to inspect your program as it is running.
 
-Using `print`, `console.log`, and `std::cout` are a kind of manual debugger. 
+Using `print`, `console.log`, and `std::cout` are a kind of manual debugger.
 
-Debugger allows *dynamic analysis*. 
+Debugger allows _dynamic analysis_.
 
 ### Debugging with GDB
 
@@ -330,17 +330,10 @@ Debugger allows *dynamic analysis*.
 
 [Debug in C++ (code)](debug.cpp)
 
+### Reading
 
+Here is an advanced article which summarises some of the state of the art work circa 2016 regarding debugging:
 
-
-
-
-
-
-
-
-
-
-
+([PDF](../08-PDF/A%20Survey%20on%20Software%20Fault%20Localization.pdf)) Wong, W.E., R. Gao, Y. Li, R. Abreu and F. Wotawa '[A survey on software fault localization](https://ieeexplore.ieee.org/document/7390282)', IEEE Transactions on Software Engineering 42(8) 2016, pp. 707-740.
 
 ---

@@ -231,18 +231,32 @@
 - [ ] LLVM
 - [x] WinDBG
 
-## 
+## 12.0204 Post-video quiz
 
-> 
+> 12.0203 Basic debugging with gdb: breakpoint and inspect
 
-1. 
+1. Which of the following describes a breakpoint?
 
+- [ ] A point where the program is likely to crash due a bug
+- [x] A point where you have instructed the debugger to pause the program
 
-## 
+2. Which describes the step action in GDB?
 
-> 
+    These definitions are from the [GDB manual](https://ftp.gnu.org/old-gnu/Manuals/gdb/html_node/gdb_37.html). 
 
-1. 
+    - [ ] Resume program execution, at the address where your program last stopped; any breakpoints set at that address are bypassed
+    - [x] Continue running your program until control reaches a different source line, then stop it and return control to GDB
+
+## 12.0206 Post-video quiz
+
+> 12.0205 Further debugging with gdb: data breakpoints and conditional breakpoints
+
+1. Which of the following are true?
+
+- [x] Watch points are triggered when a variable changes state
+- [x] Conditional breakpoints are triggered at a particular line if a specified condition is true
+- [ ] Conditional breakpoints are not attached to lines they are only attached to variables
+- [ ] Watch points are triggered when the watched program reaches a certain line
 
 
 ## 

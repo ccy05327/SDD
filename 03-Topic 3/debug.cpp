@@ -14,3 +14,17 @@ int main() {
     x++;
     return 0;
 }
+
+/**
+ * gdb debugme
+ * run
+ *
+ * break (line no.)
+ * break + conditions
+ * next
+ * step
+ * info stack
+ * 
+ * watch + variable
+ * run
+ */

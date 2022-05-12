@@ -8,7 +8,7 @@
 
 Three laws of unit-testing:
 
-- [(PDF)](../PDF/Professionalism%20and%20Test-Driven%20Development.pdf) Martin, R.C. '[Professionalism and test-driven development](https://ieeexplore.ieee.org/document/4163026)', IEEE Software 24(3) 2007, pp.32–36.
+- [(PDF)](../08-PDF/Professionalism%20and%20Test-Driven%20Development.pdf) Martin, R.C. '[Professionalism and test-driven development](https://ieeexplore.ieee.org/document/4163026)', IEEE Software 24(3) 2007, pp.32–36.
 
 The following special issue on test-driven development contains several interesting articles:
 
@@ -16,9 +16,9 @@ The following special issue on test-driven development contains several interest
 
 #### Advanced readings and future trends
 
-[(PDF)](../PDF/Metamorphic%20Testing%2020%20Years%20Later%20-%20A%20Hands-on%20Introduction.pdf) Segura, S. and Z.Q. Zhou '[Metamorphic testing 20 years later: a hands-on introduction](https://ieeexplore.ieee.org/document/8449651)', 2018 IEEE/ACM 40th International Conference on Software Engineering: Companion (ICSE-Companion) 2018, pp.538–539.
+[(PDF)](../08-PDF/Metamorphic%20Testing%2020%20Years%20Later%20-%20A%20Hands-on%20Introduction.pdf) Segura, S. and Z.Q. Zhou '[Metamorphic testing 20 years later: a hands-on introduction](https://ieeexplore.ieee.org/document/8449651)', 2018 IEEE/ACM 40th International Conference on Software Engineering: Companion (ICSE-Companion) 2018, pp.538–539.
 
-[(PDF)](../PDF/%5BJournal%20First%5D%20Analyzing%20the%20Effects%20of%20Test%20Driven%20Development%20in%20GitHub.pdf) Borle, N., M. Feghhi, E. Stroulia, R. Grenier and A. Hindle '[[Journal First] Analyzing the effects of test driven development in GitHub](https://ieeexplore.ieee.org/document/8453184)', 2018 IEEE/ACM 40th International Conference on Software Engineering (ICSE) 2018, pp.1062–1062.
+[(PDF)](../08-PDF/%5BJournal%20First%5D%20Analyzing%20the%20Effects%20of%20Test%20Driven%20Development%20in%20GitHub.pdf) Borle, N., M. Feghhi, E. Stroulia, R. Grenier and A. Hindle '[[Journal First] Analyzing the effects of test driven development in GitHub](https://ieeexplore.ieee.org/document/8453184)', 2018 IEEE/ACM 40th International Conference on Software Engineering (ICSE) 2018, pp.1062–1062.
 
 ### Learning Objectives
 

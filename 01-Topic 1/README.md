@@ -80,7 +80,7 @@ A module is a...
 
 What's an example metric?
 
-- Example metric: Sangwan et al.'s **[excessive structural complexity](https://ieeexplore.ieee.org/document/4548410)** ([Link to PDF](../PDF/Structural%20Epochs%20in%20the%20Complexity%20of%20Software%20over%20Time.pdf))
+- Example metric: Sangwan et al.'s **[excessive structural complexity](https://ieeexplore.ieee.org/document/4548410)** ([Link to PDF](../08-PDF/Structural%20Epochs%20in%20the%20Complexity%20of%20Software%20over%20Time.pdf))
 
   Look at open-source software engineering projects, how to know the complexity of the program over time. Both absolute complexity and relative, the former will be the graph below, and the latter will be, when the code is broken apart into modules, the fat (how much is going on) decreases, but the tangle (interaction between modules) increases.
 
@@ -94,13 +94,13 @@ What's an example metric?
 ### Readings
 
 - The classic [McCabe paper](https://ieeexplore.ieee.org/document/1702388) on module complexity
-  ([Link to PDF](../PDF/A%20Complexity%20Measure.pdf))
+  ([Link to PDF](../08-PDF/A%20Complexity%20Measure.pdf))
 
 - Bouwers et al.'s [Criteria for the evaluation of implemented architechtures](https://ieeexplore.ieee.org/document/5306330)
-  ([Link to PDF](../PDF/Criteria%20for%20the%20evaluation%20of%20implemented%20architectures.pdf))
+  ([Link to PDF](../08-PDF/Criteria%20for%20the%20evaluation%20of%20implemented%20architectures.pdf))
 
 - Koziolek, Heiko's [Sustainability evaluation of software architectures: a systematic review](https://dl.acm.org/doi/abs/10.1145/2000259.2000263)
-  ([Link to PDF](../PDF/Sustainability%20evaluation%20of%20software%20architectures%20-%20a%20systematic%20review.pdf))
+  ([Link to PDF](../08-PDF/Sustainability%20evaluation%20of%20software%20architectures%20-%20a%20systematic%20review.pdf))
 
 ---
 
@@ -118,7 +118,7 @@ What's an example metric?
 
 ### Readings
 
-- [ISO/IEC/IEEE International Standard - Systems and software engineering -- Vocabulary](../PDF/ISO%20IEC%20IEEE%20International%20Standard%20-%20Systems%20and%20software%20engineering%20--%20Vocabulary.pdf)
+- [ISO/IEC/IEEE International Standard - Systems and software engineering -- Vocabulary](../08-PDF/ISO%20IEC%20IEEE%20International%20Standard%20-%20Systems%20and%20software%20engineering%20--%20Vocabulary.pdf)
 
 ### What is module cohesion?
 
@@ -217,6 +217,7 @@ According to the ISO/IEEE...
 - **Control**: one module communicates information to another module for the explicit purpose of influencing the latter module's execution
 
   - Bad, might have some edge cases that's acceptable.
+
     <p style="text-align: center"><img src="../09-Images/control-coupling.jpg" alt="Control Coupling demo" style="height: 450px"></p>
 
 - **Data/Input-Output**: output from one module serves as input to another module
@@ -226,6 +227,7 @@ According to the ISO/IEEE...
 - **Hyrbid**: different subsets of the range of values that a data item can assume are used for different and unrelated purposes in different modules
 
   - Bad.
+
     <p style="text-align: center"><img src="../09-Images/hybrid-coupling.jpg" alt="Hybrid Coupling demo" style="height: 250px"></p>
 
 - **Pathological**: one module affects or depends upon the internal implementation of another

@@ -12,16 +12,16 @@
 
 **Opinion 1: Always use assertions**
 
-- ([PDF](../PDF/Assertive%20Testing%20%5BReliable%20Code%5D.pdf)) Holzmann, G.J. ['Assertive testing [reliable code]'](https://ieeexplore.ieee.org/document/7093042), IEEE Software 32(3) 2015, pp.12–15.
+- ([PDF](../08-PDF/Assertive%20Testing%20%5BReliable%20Code%5D.pdf)) Holzmann, G.J. ['Assertive testing [reliable code]'](https://ieeexplore.ieee.org/document/7093042), IEEE Software 32(3) 2015, pp.12–15.
 
 **Opinion 2: In industry, assertions are often removed in release builds**
 
-- ([PDF](../PDF/A%20Historical%20Perspective%20on%20Runtime%20Assertion%20Checking%20in%20Software%20Development%20.pdf)) Clarke, L.A. and D.S. Rosenblum ['A historical perspective on runtime assertion checking in software development'](https://discovery.ucl.ac.uk/id/eprint/4991/), SIGSOFT Software Engineering Notes 31(3) 2006, pp.25–37.
+- ([PDF](../08-PDF/A%20Historical%20Perspective%20on%20Runtime%20Assertion%20Checking%20in%20Software%20Development%20.pdf)) Clarke, L.A. and D.S. Rosenblum ['A historical perspective on runtime assertion checking in software development'](https://discovery.ucl.ac.uk/id/eprint/4991/), SIGSOFT Software Engineering Notes 31(3) 2006, pp.25–37.
 
 **For a great discussion of various aspects**: [What are assertions? ](https://web.archive.org/web/20191209110926/http://wiki.c2.com/?WhatAreAssertions)
 
-- ([PDF](../PDF/Assertions%20-%20a%20personal%20perspective.pdf)) Classic paper: Hoare, C.A.R ['Assertions: a personal perspective'](https://ieeexplore.ieee.org/document/1203056), IEEE Annals of the History of Computing 25(2) 2003, pp.14–25.
-- ([PDF](../PDF/Design%20by%20contract%20-%20the%20lessons%20of%20Ariane.pdf)) Ariane Rocket explosion: Jazequel, J.-M. and B. Meyer, ['Design by contract: the lessons of Ariane'](https://ieeexplore.ieee.org/document/562936), Computer 30(1) 1997, pp.129–30.
+- ([PDF](../08-PDF/Assertions%20-%20a%20personal%20perspective.pdf)) Classic paper: Hoare, C.A.R ['Assertions: a personal perspective'](https://ieeexplore.ieee.org/document/1203056), IEEE Annals of the History of Computing 25(2) 2003, pp.14–25.
+- ([PDF](../08-PDF/Design%20by%20contract%20-%20the%20lessons%20of%20Ariane.pdf)) Ariane Rocket explosion: Jazequel, J.-M. and B. Meyer, ['Design by contract: the lessons of Ariane'](https://ieeexplore.ieee.org/document/562936), Computer 30(1) 1997, pp.129–30.
 
 ### Assertions
 
@@ -112,13 +112,13 @@ An `assertion` checks the state.
 
 ### Reading
 
-([PDF](../PDF/The%20protection%20of%20information%20in%20computer%20systems.pdf)) Classic paper from 1975: Saltzer, J.H. and M. D. Schroeder '[The protection of information in computer systems](https://ieeexplore.ieee.org/document/1451869)', Proceedings of the IEEE 63(9) 1975, pp.1278–308.
+([PDF](../08-PDF/The%20protection%20of%20information%20in%20computer%20systems.pdf)) Classic paper from 1975: Saltzer, J.H. and M. D. Schroeder '[The protection of information in computer systems](https://ieeexplore.ieee.org/document/1451869)', Proceedings of the IEEE 63(9) 1975, pp.1278–308.
 
-([PDF](../PDF/Secure%20Programs%20HOWTO.pdf)) David Wheeler's book is a great resource. It is Unix focused but applicable to all platforms: Wheeler, D.A. [Secure programming for Linux and Unix HOWTO](https://dwheeler.com/secure-programs/) (1999).
+([PDF](../08-PDF/Secure%20Programs%20HOWTO.pdf)) David Wheeler's book is a great resource. It is Unix focused but applicable to all platforms: Wheeler, D.A. [Secure programming for Linux and Unix HOWTO](https://dwheeler.com/secure-programs/) (1999).
 
 Some interesting articles can be found in [Security and Privacy](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8013).
 
-([PDF](../PDF/Are%20Companies%20Actually%20Using%20Secure%20Development%20Life%20Cycles.pdf)) For an analysis of software companies' approach to secure software, read Geer, D. '[Are companies actually using secure development life cycles?](https://ieeexplore.ieee.org/document/5481927)', Computer 43(6) 2010, pp.12–16.
+([PDF](../08-PDF/Are%20Companies%20Actually%20Using%20Secure%20Development%20Life%20Cycles.pdf)) For an analysis of software companies' approach to secure software, read Geer, D. '[Are companies actually using secure development life cycles?](https://ieeexplore.ieee.org/document/5481927)', Computer 43(6) 2010, pp.12–16.
 
 Links:
 
@@ -152,7 +152,7 @@ Links:
 
 - Follow Good Security Design Principles
 
-  From [The protection of information in computer systems](../PDF/The%20protection%20of%20information%20in%20computer%20systems.pdf)
+  From [The protection of information in computer systems](../08-PDF/The%20protection%20of%20information%20in%20computer%20systems.pdf)
 
   <span style="color: gray">
     <ul>

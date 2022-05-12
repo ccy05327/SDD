@@ -18,7 +18,7 @@
 
   Everything we know about building, maintaining, testing, quality evaluating... software.
 
-  ![Summary of SWEBOK](../Images/week-1-reference.png)
+    <p style="text-align: center"><img src="../09-Images/week-1-reference.png" alt="Summary of SWEBOK" style="height: 150px"></p>
 
 - **[ISO/IEC/IEEE 24765](https://ieeexplore.ieee.org/document/5733835)**: a big vocabulary/dictionary of important terms in software engineering
 
@@ -86,7 +86,7 @@ What's an example metric?
 
   What they expect:
 
-  ![Project complexity through time](../Images/week-1-module-example-metric.jpg)
+  <p style="text-align: center"><img src="../09-Images/week-1-module-example-metric.jpg" alt="Project complexity through time" style="height: 300px"></p>
 
 - module cohesion - what's in a module -- fat
 - module coupling - interaction between modules -- tangle
@@ -206,18 +206,18 @@ According to the ISO/IEEE...
 
   - It's okay, but data **could** end up in unpredictable states.
 
-    ![Common Environment Coupling demo](../Images/common-environment-coupling.jpg)
+    <p style="text-align: center"><img src="../09-Images/common-environment-coupling.jpg" alt="Common Environment Coupling demo" style="height: 200px"></p>
 
 - **Content**: some or all contents of one module are included in the content of another module
 
   - Acceptable. This is a very common way of designing and writing code.
 
-    ![Content Coupling demo](../Images/content-coupling.jpg)
+    <p style="text-align: center"><img src="../09-Images/content-coupling.jpg" alt="Content Coupling demo" style="height: 250px"></p>
 
 - **Control**: one module communicates information to another module for the explicit purpose of influencing the latter module's execution
 
   - Bad, might have some edge cases that's acceptable.
-    ![Control Coupling demo](../Images/control-coupling.jpg)
+    <p style="text-align: center"><img src="../09-Images/control-coupling.jpg" alt="Control Coupling demo" style="height: 450px"></p>
 
 - **Data/Input-Output**: output from one module serves as input to another module
 
@@ -226,7 +226,7 @@ According to the ISO/IEEE...
 - **Hyrbid**: different subsets of the range of values that a data item can assume are used for different and unrelated purposes in different modules
 
   - Bad.
-    ![Hybrid Coupling demo](../Images/hybrid-coupling.jpg)
+    <p style="text-align: center"><img src="../09-Images/hybrid-coupling.jpg" alt="Hybrid Coupling demo" style="height: 250px"></p>
 
 - **Pathological**: one module affects or depends upon the internal implementation of another
   - Very Bad. Like hybrid but worse.

@@ -273,7 +273,7 @@ Exceptions should be used to catch errors, control flow has similar syntax and f
 
 ### Try and catch
 
-<p style="text-align: center"><img src="../09-Images/try-and-catch.jpg" alt="assertion vs. exception image" style="height: 400px"><br/>Try and catch</p>
+<p style="text-align: center"><img src="../09-Images/try-and-catch.jpg" alt="assertion vs. exception image" style="height: 350px"><br/>Try and catch</p>
 
 #### Try and catch in JavaScript
 

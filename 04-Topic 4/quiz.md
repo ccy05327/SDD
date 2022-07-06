@@ -54,11 +54,17 @@
 
 ---
 
-## 13.0205 Post-video quiz
+## 14.0304 Reflective quiz about testing
 
-> 13.0204 Whirlwind tour of requirements techniques
+1. You can see that there is a lot of information out there about testing. Can you come up with three interesting pieces of information about testing? Write them down as bullet points. 
 
-1.
+- testing the inputs, outputs and not the contents
+- using AI to automate testing procedural
+- testing matrix
+
+> * Black box testing is when the tester cannot see the inner workings of the software system. They are operating it from the outside
+> * Testing might not always be effective, if the coverage is not great enough
+> * Using standard formats for testing procedures allows for clear communication of how tests should be carried out
 
 ## 13.0205 Post-video quiz
 

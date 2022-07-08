@@ -8,5 +8,5 @@
 
 - [Topic 4 Notes](https://ccy05327.github.io/SDD/04-Topic%204/README.html)
 
-- Topic 5 Notes
+- [Topic 5 Notes](https://ccy05327.github.io/SDD/05-Topic%205/README.html)
 

@@ -219,8 +219,37 @@ This is a very detailed paper describing the state of the art in automated video
 
 ### Learning objectives
 
--
--
-- 
+- Differentiate between accessibility and usability in terms of the target users
+- User accessibility testing tools to identify accessibility problems with software systems
+- Be aware that in the UK at least, there are legal requirements to make certain requirements to make certain software systems as accessible as reasonably possible
 
-***
+### Reading
+
+- A​Checker [Web Accessibility Checker](https://achecker.achecks.ca/checker/index.php)
+
+- [The Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 ](https://www.legislation.gov.uk/uksi/2018/952/contents/made)
+
+### Accessibility
+
+> extent to which products, systems, services, environments and facilities can be used by **people from a population with the widest range of characteristics and capabilities** to achieve a specified goal in a specified context of use
+>
+> ISO/IEEE 2017 p6, 3.41
+
+> #### Usability
+>
+> A subset of accessibility.
+> Giving a certain group of users access
+>
+> #### Accessibility
+>
+> Giving as many people as possible access
+
+#### Legal requirements in the UK
+
+> 6. Subject to regulation 7, public sector bodies must comply with the accessibility requirement.
+>
+> The Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018
+
+> **accessibility requirement** means the requirement to make a website or mobile application accessible by making it _perceivable_, _operable_, _understandable_, and _robust_.
+
+---

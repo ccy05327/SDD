@@ -6,7 +6,7 @@
 
 - [Topic 3 Notes](https://ccy05327.github.io/SDD/03-Topic%203/README.html)
 
-- [Topic 4 Notes](https://ccy05327.github.io/SDD/03-Topic%204/README.html)
+- [Topic 4 Notes](https://ccy05327.github.io/SDD/04-Topic%204/README.html)
 
 - Topic 5 Notes
 

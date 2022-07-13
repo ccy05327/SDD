@@ -36,9 +36,9 @@
 
 ### Learning objectives
 
--
--
-- 
+- Use git log commands to pull out a variety of information about the commits in git repositories
+- Use git log commands to visualize branches and merges in a git repository
+- Use the ungit tool to interactively visualize repositories as they change in realtime
 
 ***
 

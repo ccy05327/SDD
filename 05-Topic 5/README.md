@@ -40,14 +40,18 @@
 - Use git log commands to visualize branches and merges in a git repository
 - Use the ungit tool to interactively visualize repositories as they change in realtime
 
-***
+---
 
 ## Week 20 GitHub profiles and FLOSS
 
 ### Learning objectives
 
--
--
-- 
+- Discuss the issues relating to public github profiles and give examples of how they might be useful or not useful when applying for jobs
+- State what FLOSS is and explain the value of contributing to open source projects
+- Use features of the github platform to identify ways one might contribute to an existing project and ways to which others are attempting to contribute
 
-***
+### Reading
+
+-  GitHub '[First contributions](https://github.com/firstcontributions/first-contributions)' (2020).
+
+---

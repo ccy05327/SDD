@@ -20,26 +20,15 @@
 
 ### Learning objectives
 
--
--
--
+- Create and manage the files in the local git repository
+- Create, switch between and merge branches in a git repository
+- Work with a remote git repository, creating and merging branches and managing conflicts
 
+### Reading
 
+- git '[Book](https://git-scm.com/book/en/v2)' (2014)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [Git Installation instructions](../08-PDF/Week%2018%20worksheet-1.pdf)
 
 ---
 
@@ -49,24 +38,9 @@
 
 -
 -
--
+- 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
+***
 
 ## Week 20 GitHub profiles and FLOSS
 
@@ -74,21 +48,6 @@
 
 -
 -
--
+- 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
+***
